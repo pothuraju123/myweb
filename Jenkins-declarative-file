@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment{
-        PATH = "/usr/bin/mvn:$PATH"
+        PATH = "/opt/mvn3/bin:$PATH"
     }
     stages {
         stage('Git Ceckout') {
