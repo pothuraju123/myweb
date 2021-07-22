@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git Ceckout') {
+            steps {
+                git credentialsId: '854dfaaa-17c3-421a-9d21-c327178a1239', url: 'https://github.com/pothuraju123/myweb.git'
+            }
+        }
+    }
+}
